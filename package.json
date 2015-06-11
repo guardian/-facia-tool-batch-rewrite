@@ -1,0 +1,12 @@
+{
+  "name": "facia-tool-batch-rewrite",
+  "version": "1.0.0",
+  "description": "Rewrite facia tool collections",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "aws-s3-facia-tool": "^0.3.2",
+    "lodash": "^3.9.3",
+    "mkdirp": "^0.5.1"
+  }
+}
