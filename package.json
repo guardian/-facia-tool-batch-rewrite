@@ -5,8 +5,11 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "aws-s3-facia-tool": "^0.3.2",
-    "lodash": "^3.9.3",
-    "mkdirp": "^0.5.1"
+    "async": "^1.4.0",
+    "aws-s3-facia-tool": "^0.4.5",
+    "es6-promise": "^2.3.0",
+    "lodash": "^3.10.0",
+    "mkdirp": "^0.5.1",
+    "request": "^2.60.0"
   }
 }
