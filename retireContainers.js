@@ -13,9 +13,11 @@ var tool = new FaciaTool({
 var convertFromTo = {
 	'fixed/large/fast-XV': 'fixed/medium/fast-XI',
 	'fixed/small/fast-X': 'fixed/small/fast-VIII',
-	'fixed/medium/slow-VIII': 'fixed/medium/slow/XII-MPU',
+	'fixed/medium/slow-VIII': 'fixed/medium/slow-XII-mpu',
 	'fixed/small/slow-II': 'fixed/small/slow-III',
-	'fixed/small/slow-VI': 'fixed/small/slow-v-third'
+	'fixed/small/slow-VI': 'fixed/small/slow-v-third',
+	'fixed/medium/slow/XII-MPU': 'fixed/medium/slow-XII-mpu',
+	'fixed/medium/slow-XII-MPU': 'fixed/medium/slow-XII-mpu'
 };
 
 var collectionsThatChanged = [];
