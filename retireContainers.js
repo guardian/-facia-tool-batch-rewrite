@@ -15,7 +15,8 @@ var convertFromTo = {
 	'fixed/small/fast-X': 'fixed/small/fast-VIII',
 	'fixed/medium/slow-VIII': 'fixed/medium/slow-XII-mpu',
 	'fixed/small/slow-II': 'fixed/small/slow-III',
-	'fixed/small/slow-VI': 'fixed/small/slow-v-third',
+	'fixed/small/slow-VI': 'fixed/small/slow-V-third',
+	'fixed/small/slow-v-third': 'fixed/small/slow-V-third',
 	'fixed/medium/slow/XII-MPU': 'fixed/medium/slow-XII-mpu',
 	'fixed/medium/slow-XII-MPU': 'fixed/medium/slow-XII-mpu'
 };
@@ -26,7 +27,7 @@ var frontsThatChanged = [];
 tool.fetchConfig()
 .then(writeToDisk('original/config.json'))
 .then(retireCollections)
-.then(writeToDisk('modified/config.json'))
+.then(writeToDisk('transformed/config.json'))
 .then(summary)
 .catch(console.error);
 
