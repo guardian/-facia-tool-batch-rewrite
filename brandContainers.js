@@ -5,15 +5,14 @@ var path = require('path');
 var fs = require('fs');
 
 var tool = new FaciaTool({
-    'bucket': 'aws-frontend-store',
-    'env': 'DEV',
+    'bucket': 'facia-tool-store',
+    'env': 'CODE',
     'configKey': 'frontsapi/config/config.json'
 });
 
 var collectionIds = [
-	'a',
-	'b',
-	'c'
+	'e59785e9-ba82-48d8-b79a-0a80b2f9f808',
+	'1846430f-d0e4-48ab-9ed7-b625e5685d56'
 ];
 
 var collectionsThatChanged = [];
@@ -46,8 +45,12 @@ function rewrite (collections) {
 	var rewritten = {};
 	for (var id in collections) {
 		rewritten[id] = Object.assign({}, collections[id]);
-		if (convertFromTo[rewritten[id].type]) {
-			rewritten[id].type = convertFromTo[rewritten[id].type];
+		if (collectionIds.indexOf(id) !== -1) {
+			rewritten[id].metadata = (rewritten[id].metadata || []).filter(function (tag) {
+				return tag.type !== 'Branded';
+			}).concat([{
+				type: 'Branded'
+			}]);
 			collectionsThatChanged.push(id);
 		}
 	}

@@ -5,20 +5,14 @@ var path = require('path');
 var fs = require('fs');
 
 var tool = new FaciaTool({
-    'bucket': 'aws-frontend-store',
-    'env': 'PROD',
+    'bucket': 'facia-tool-store',
+    'env': 'CODE',
     'configKey': 'frontsapi/config/config.json'
 });
 
 var convertFromTo = {
-	'fixed/large/fast-XV': 'fixed/medium/fast-XI',
-	'fixed/small/fast-X': 'fixed/small/fast-VIII',
-	'fixed/medium/slow-VIII': 'fixed/medium/slow-XII-mpu',
-	'fixed/small/slow-II': 'fixed/small/slow-III',
-	'fixed/small/slow-VI': 'fixed/small/slow-V-third',
-	'fixed/small/slow-v-third': 'fixed/small/slow-V-third',
-	'fixed/medium/slow/XII-MPU': 'fixed/medium/slow-XII-mpu',
-	'fixed/medium/slow-XII-MPU': 'fixed/medium/slow-XII-mpu'
+	'commercial/single-campaign': 'fixed/small/slow-IV',
+	'commercial/multi-campaign': 'fixed/small/slow-IV'
 };
 
 var collectionsThatChanged = [];
