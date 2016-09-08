@@ -6,7 +6,7 @@ var fs = require('fs');
 
 var tool = new FaciaTool({
     'bucket': 'facia-tool-store',
-    'env': 'CODE',
+    'env': 'PROD',
     'configKey': 'frontsapi/config/config.json'
 });
 
