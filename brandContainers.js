@@ -1,3 +1,6 @@
+/*
+ * Attaches the 'Branded' tag to a batch of containers.
+ */
 var FaciaTool = require('aws-s3-facia-tool');
 var _ = require('lodash');
 var mkdirp = require('mkdirp');
@@ -10,6 +13,7 @@ var tool = new FaciaTool({
     'configKey': 'frontsapi/config/config.json'
 });
 
+// Update this list with the IDs of containers to tag.
 var collectionIds = [
     'b07ffc65-263d-46cb-a7c3-bb5a01d8f4fe',
     'cf693b4c-7967-4247-8751-506e46b50058',
