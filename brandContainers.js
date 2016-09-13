@@ -99,6 +99,7 @@ var collectionIds = [
     'c93da35f-2548-4b4a-ae53-c347672bb07f',
     '518de4cf-e307-4efc-b766-03fefbacbc6a',
     '5308791e-55bb-4593-8d57-7afee3d9b8f1',
+    '98e748ea-a933-4b88-b9ea-a2bc1a7e105c',
     'f7e372d6-0929-406c-b8e0-48431e9098ac',
     '6b2474bd-ae7d-45a8-92bf-0bb11d9f484f',
     'ffefaaaa-dc74-4776-9063-a9cfee49c092',
@@ -175,6 +176,7 @@ var collectionIds = [
     'e7840727-de36-4f6d-8e36-d2a8c2bdb411',
     '85a7f30c-390d-4598-ac69-b684a14fc4b4',
     '283cc6be-3985-4f54-8b1d-d54578d9eefc',
+    '40f22e71-96c4-43b6-a876-d47a34b5e655',
     '8d824d95-95ec-4ef0-8c57-cf9cee85df69',
     '2483b6ee-78bf-443f-9f8a-efede38acc51',
     'd2be4ae4-c089-49d1-8baa-3c3e58eb0920'
